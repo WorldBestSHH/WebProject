@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="test" method="post" action="test_pro.jsp">
+		<!-- radio, checkbox(여러개를 선택할 수 있기때문에 배열형식)
+			 는 선택하기 때문에 name이 같아야 함 -->
+		성별 : 남 <input type="radio" name="gender" value="M">
+			  여 <input type="radio" name="gender" value="F"><br>
+		좋아하는 운동 : <input type="checkbox" name="fa" value="야구">야구
+					 <input type="checkbox" name="fa" value="축구">축구
+					 <input type="checkbox" name="fa" value="농구">농구<br>
+		직업선택 : <select name="job">
+					<option>직업을 선택하세요</option>
+					<option value="공무원">공무원</option>
+					<option value="교사">교사</option>
+					<option value="군인">군인</option>
+					<option value="학생">학생</option>
+				 </select><br>
+		자기소개 : <textarea name="intro" cols="50" rows="5"></textarea><br>
+		<input type="submit" value="등록하기">
+		<input type="reset" value="취소하기">
+	</form>
+</body>
+</html>
